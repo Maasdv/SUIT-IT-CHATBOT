@@ -1,0 +1,21 @@
+from fastapi import FastAPI
+from langchain_community.llms import Ollama
+from langchain_community.embeddings import OllamaEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain.chains import RetrievalQA
+
+app = FastAPI()
+
+llm = Ollama(model="mistral")
+embeddings = OllamaEmbeddings(model="mistral")
+
+db = FAISS.load_local("langchain/vectorstore", embeddings, allow_dangerous_deserialization=True)
+qa = RetrievalQA.from_chain_type(
+    llm=llm,
+    retriever=db.as_retriever(),
+)
+
+@app.post("/ask")
+def ask(question: str):
+    answer = qa.run(question)
+    return {"answer": answer}
