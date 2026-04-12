@@ -1,3 +1,7 @@
 PublicKey Wire = 0PiBCqPH1/7DY1ghBv3FJ3gOXLxyFGzC9JoyKxn2OlY=
 Private = sFc1RqRJo+DeCNDwcAlVaYXWUjd3V/HuZIiGVJk2mFg=
 Peer PublicKey = vPqRA/0fx7cAvfR8sd7T47jg0KMmEdgahs9AvpN8SWw=
+
+Pfsense
+Tunnel public = vPqRA/0fx7cAvfR8sd7T47jg0KMmEdgahs9AvpN8SWw=
+Public Peer = 0PiBCqPH1/7DY1ghBv3FJ3gOXLxyFGzC9JoyKxn2OlY=
