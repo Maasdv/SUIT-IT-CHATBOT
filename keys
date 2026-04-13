@@ -5,3 +5,6 @@ Peer PublicKey = vPqRA/0fx7cAvfR8sd7T47jg0KMmEdgahs9AvpN8SWw=
 Pfsense
 Tunnel public = vPqRA/0fx7cAvfR8sd7T47jg0KMmEdgahs9AvpN8SWw=
 Public Peer = 0PiBCqPH1/7DY1ghBv3FJ3gOXLxyFGzC9JoyKxn2OlY=
+
+Wireguard VM
+Public = e7S+wkDXYS+qKILw3SoZD5MbH2EvzZVAROO0qOX61QI=
