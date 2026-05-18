@@ -1,16 +1,4 @@
 
-curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-amd64.deb
-sudo dpkg -i elastic-agent-8.13.4-amd64.deb
-sudo elastic-agent enroll \
-  --fleet-server-es=https://localhost:9200 \
-  --insecure \
-  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE3NzkxMDUwNzIxMDI6UHJiNjNIUUVRcU9BdzhaNlBHSXhVZw \
-  --fleet-server-policy=fleet-server-policy \
-  --fleet-server-port=8220
-sudo systemctl enable elastic-agent
-sudo systemctl start elastic-agent
-sudo elastic-agent uninstall --uninstall-token 3d3d7c7cde8c755ec1abbe9d995f6920
-
 elastic-agent enroll \
   --force \
   --fleet-server-es=https://localhost:9200 \
@@ -19,3 +7,9 @@ elastic-agent enroll \
   --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE3NzkxMDUwNzIxMDI6UHJiNjNIUUVRcU9BdzhaNlBHSXhVZw \
   --fleet-server-policy=fleet-server-policy \
   --fleet-server-port=8220
+
+curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-amd64.deb
+sudo dpkg -i elastic-agent-8.13.4-amd64.deb
+sudo elastic-agent enroll --url=https://172.10.10.60:8220 --enrollment-token=aFhUS09wNEI4RGR1bUpBbVZnMGQ6SWdXUlJwOE9UeWFjYXNlR2Y2Qy00QQ== 
+sudo systemctl enable elastic-agent 
+sudo systemctl start elastic-agent
