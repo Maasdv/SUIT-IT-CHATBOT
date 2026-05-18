@@ -7,3 +7,5 @@ sudo elastic-agent enroll \
   --fleet-server-port=8220
 sudo systemctl enable elastic-agent
 sudo systemctl start elastic-agent
+
+sudo elastic-agent uninstall --uninstall-token 3d3d7c7cde8c755ec1abbe9d995f6920
