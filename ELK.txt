@@ -13,3 +13,8 @@ sudo dpkg -i elastic-agent-8.13.4-amd64.deb
 sudo elastic-agent enroll --url=https://172.10.10.60:8220 --enrollment-token=aFhUS09wNEI4RGR1bUpBbVZnMGQ6SWdXUlJwOE9UeWFjYXNlR2Y2Qy00QQ== 
 sudo systemctl enable elastic-agent 
 sudo systemctl start elastic-agent
+curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-amd64.deb
+sudo dpkg -i elastic-agent-8.13.4-amd64.deb
+sudo elastic-agent enroll --url=https://172.10.10.60:8220 --enrollment-token=c25RS081NEI4RGR1bUpBbVNRMk46Mm0zV1VzYkJRY2FoYjNyOTNKUlU1UQ== 
+sudo systemctl enable elastic-agent 
+sudo systemctl start elastic-agent
