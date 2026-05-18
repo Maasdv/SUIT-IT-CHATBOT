@@ -1,7 +1,7 @@
 curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-amd64.deb
 sudo dpkg -i elastic-agent-8.13.4-amd64.deb
 sudo elastic-agent enroll \
-  --fleet-server-es=http://localhost:9200 \
+  --fleet-server-es=https://localhost:9200 \
   --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE3NzkxMDUwNzIxMDI6UHJiNjNIUUVRcU9BdzhaNlBHSXhVZw \
   --fleet-server-policy=fleet-server-policy \
   --fleet-server-port=8220
