@@ -1,8 +1,8 @@
-curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-amd64.deb
-sudo dpkg -i elastic-agent-8.13.4-amd64.deb
+curl -L -O https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-8.13.4-x86_64.rpm
+sudo rpm -vi elastic-agent-8.13.4-x86_64.rpm
 sudo elastic-agent enroll \
   --fleet-server-es=http://localhost:9200 \
-  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE3NzkxMDM4OTM0ODc6Y0pnckEtajRSbzZONlhQNXNVQmtpQQ \
+  --fleet-server-service-token=AAEAAWVsYXN0aWMvZmxlZXQtc2VydmVyL3Rva2VuLTE3NzkxMDQzMTMzNzc6c01ETks1YkFULXVINWs0S1ZiVnV0UQ \
   --fleet-server-policy=fleet-server-policy \
   --fleet-server-port=8220
 sudo systemctl enable elastic-agent
