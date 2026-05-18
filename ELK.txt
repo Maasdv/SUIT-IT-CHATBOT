@@ -18,3 +18,9 @@ sudo dpkg -i elastic-agent-8.13.4-amd64.deb
 sudo elastic-agent enroll --url=https://172.10.10.60:8220 --enrollment-token=c25RS081NEI4RGR1bUpBbVNRMk46Mm0zV1VzYkJRY2FoYjNyOTNKUlU1UQ== 
 sudo systemctl enable elastic-agent 
 sudo systemctl start elastic-agent
+
+GET logs-zeek.connection-default/_search
+{
+  "size": 1,
+  "sort": [{ "@timestamp": "desc" }]
+}
