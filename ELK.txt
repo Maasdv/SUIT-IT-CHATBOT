@@ -1,13 +1,5 @@
-GET .ds-filebeat-8.13.4-2026.05.18-000001/_search
 {
-  "size": 5,
-  "query": {
-    "match_all": {}
-  }
-}
-
-{
-  "took": 4,
+  "took": 0,
   "timed_out": false,
   "_shards": {
     "total": 1,
