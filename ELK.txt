@@ -1,73 +1,18 @@
 {
-  "note": "No shard was specified in the explain API request, so this response explains a randomly chosen unassigned shard. There may be other unassigned shards in this cluster which cannot be assigned for different reasons. It may not be possible to assign this shard until one of the other shards is assigned correctly. To explain the allocation of other shards (whether assigned or unassigned) you must specify the target shard in the request to this API.",
-  "index": ".ds-filebeat-8.13.4-2026.05.18-000001",
-  "shard": 0,
-  "primary": false,
-  "current_state": "unassigned",
-  "unassigned_info": {
-    "reason": "INDEX_CREATED",
-    "at": "2026-05-18T10:33:20.963Z",
-    "last_allocation_status": "no_attempt"
+  "took": 0,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "skipped": 0,
+    "failed": 0
   },
-  "can_allocate": "no",
-  "allocate_explanation": "Elasticsearch isn't allowed to allocate this shard to any of the nodes in the cluster. Choose a node to which you expect this shard to be allocated, find this node in the node-by-node explanation, and address the reasons which prevent Elasticsearch from allocating this shard there.",
-  "node_allocation_decisions": [
-    {
-      "node_id": "3WetglPBQLqOD1a3f3D31Q",
-      "node_name": "ubuntu-server-2404",
-      "transport_address": "127.0.0.1:9300",
-      "node_attributes": {
-        "ml.allocated_processors_double": "4.0",
-        "ml.max_jvm_size": "4164943872",
-        "ml.config_version": "12.0.0",
-        "xpack.installed": "true",
-        "transform.config_version": "10.0.0",
-        "ml.machine_memory": "8326967296",
-        "ml.allocated_processors": "4"
-      },
-      "roles": [
-        "data",
-        "data_cold",
-        "data_content",
-        "data_frozen",
-        "data_hot",
-        "data_warm",
-        "ingest",
-        "master",
-        "ml",
-        "remote_cluster_client",
-        "transform"
-      ],
-      "node_decision": "no",
-      "weight_ranking": 1,
-      "deciders": [
-        {
-          "decider": "same_shard",
-          "decision": "NO",
-          "explanation": "a copy of this shard is already allocated to this node [[.ds-filebeat-8.13.4-2026.05.18-000001][0], node[3WetglPBQLqOD1a3f3D31Q], [P], s[STARTED], a[id=iVywbaydTrC7WLkcZnLBpQ], failed_attempts[0]]"
-
-health status index                                                              uuid                   pri rep docs.count docs.deleted store.size pri.store.size dataset.size
-yellow open   .ds-filebeat-8.13.4-2026.05.18-000001                              jKx8TT5IRNq7a0dNGZ4Cuw   1   1          0            0       249b           249b         249b
-yellow open   .ds-logs-zeek.connection-default-2026.05.18-000001                 pdcrPxTtRquHXU6iMUCw1Q   1   1          0            0       249b           249b         249b
-green  open   .ds-metrics-fleet_server.agent_status-default-2026.05.18-000001    vL4sXFIhS5qsvhAGWvlTIw   1   0       1207            0    360.6kb        360.6kb      360.6kb
-green  open   .ds-metrics-fleet_server.agent_versions-default-2026.05.18-000001  8eEkDuEvS9mz44RLMP-eiQ   1   0       1207            0    269.8kb        269.8kb      269.8kb
-green  open   .internal.alerts-default.alerts-default-000001                     yMsDO4JtQOiGcMuJDkUF-A   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-ml.anomaly-detection-health.alerts-default-000001 CFOzPBtjQPid7152Xa6r_A   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-ml.anomaly-detection.alerts-default-000001        iCVylmAbSc2PeJJkVF6spw   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.apm.alerts-default-000001           xWBV0pkfR029FB2_BrloEA   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.logs.alerts-default-000001          hQmIOUPSRAaRmkB10PTcdA   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.metrics.alerts-default-000001       SypN7KlQTkqF86t26gDtpA   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.slo.alerts-default-000001           9t5DOoR1Qy2sqSfR-DR_4Q   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.threshold.alerts-default-000001     KTTs8Lm4R0WKJmMyerrp1Q   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-observability.uptime.alerts-default-000001        dmGyCUfJTzyKM4kH2z7cxQ   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-security.alerts-default-000001                    tnemJnqISiSjTFvt0a8O4w   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-stack.alerts-default-000001                       _acqVAytQYyAv-qxHf7HTA   1   0          0            0       249b           249b         249b
-green  open   .internal.alerts-transform.health.alerts-default-000001            rF2wdiRzQjiuh5FXPF8E3g   1   0          0            0       249b           249b         249b
-green  open   .kibana-observability-ai-assistant-conversations-000001            16C1OO3FTCiqel2naevV8g   1   0          0            0       249b           249b         249b
-green  open   .kibana-observability-ai-assistant-kb-000001                       O9tLjUVeSbqtzcPocMpeDw   1   0          0            0       249b           249b         249b
-green  open   metrics-endpoint.metadata_current_default                          yF7VI8CgT-WwTarcvPdEqw   1   0          0            0       249b           249b         249b
-        }
-      ]
-    }
-  ]
+  "hits": {
+    "total": {
+      "value": 0,
+      "relation": "eq"
+    },
+    "max_score": null,
+    "hits": []
+  }
 }
