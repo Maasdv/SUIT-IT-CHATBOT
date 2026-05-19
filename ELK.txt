@@ -1,18 +1,2 @@
-{
-  "took": 0,
-  "timed_out": false,
-  "_shards": {
-    "total": 1,
-    "successful": 1,
-    "skipped": 0,
-    "failed": 0
-  },
-  "hits": {
-    "total": {
-      "value": 0,
-      "relation": "eq"
-    },
-    "max_score": null,
-    "hits": []
-  }
-}
+bfetch_error_BfetchRequestError@http://172.10.10.60:5601/f5dc24d1969f/bundles/plugin/bfetch/1.0.0/bfetch.plugin.js:1:2036
+f/f</e.onreadystatechange@http://172.10.10.60:5601/f5dc24d1969f/bundles/plugin/bfetch/1.0.0/bfetch.plugin.js:1:4004
