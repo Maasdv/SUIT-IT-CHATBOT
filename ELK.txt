@@ -19,27 +19,24 @@ sudo elastic-agent enroll --url=https://172.10.10.60:8220 --enrollment-token=c25
 sudo systemctl enable elastic-agent 
 sudo systemctl start elastic-agent
 
-{
-  "took": 3,
-  "timed_out": false,
-  "_shards": {
-    "total": 1,
-    "successful": 1,
-    "skipped": 0,
-    "failed": 0
-  },
-  "hits": {
-    "total": {
-      "value": 0,
-      "relation": "eq"
-    },
-    "max_score": null,
-    "hits": []
-  }
-}
 
-GET logs-zeek.connection-default/_search
 {
-  "size": 1,
-  "sort": [{ "@timestamp": "desc" }]
-}
+  "error": {
+    "root_cause": [
+      {
+        "type": "index_not_found_exception",
+        "reason": "no such index [logs-generic-default]",
+        "resource.type": "index_or_alias",
+        "resource.id": "logs-generic-default",
+        "index_uuid": "_na_",
+        "index": "logs-generic-default"
+      }
+    ],
+    "type": "index_not_found_exception",
+    "reason": "no such index [logs-generic-default]",
+    "resource.type": "index_or_alias",
+    "resource.id": "logs-generic-default",
+    "index_uuid": "_na_",
+    "index": "logs-generic-default"
+  },
+  "status": 404
