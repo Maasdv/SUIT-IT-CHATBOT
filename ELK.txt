@@ -1,4 +1,245 @@
-GET logs-zeek.connection-default/_search
+
 {
-  "size": 1
+  "_all": {
+    "primaries": {
+      "indexing": {
+        "index_failed": 0
+      }
+    },
+    "total": {
+      "indexing": {
+        "index_failed": 0
+      }
+    }
+  },
+  "indices": {
+    ".ds-logs-zeek.connection-default-2026.05.18-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-transform.health.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.logs.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".ds-metrics-fleet_server.agent_status-default-2026.05.18-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.uptime.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-ml.anomaly-detection.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.slo.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.apm.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-default.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".ds-filebeat-8.13.4-2026.05.18-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    "metrics-endpoint.metadata_current_default": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.metrics.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".kibana-observability-ai-assistant-conversations-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".ds-metrics-fleet_server.agent_versions-default-2026.05.18-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-observability.threshold.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-ml.anomaly-detection-health.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-security.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".kibana-observability-ai-assistant-kb-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    },
+    ".internal.alerts-stack.alerts-default-000001": {
+      "primaries": {
+        "indexing": {
+          "index_failed": 0
+        }
+      },
+      "total": {
+        "indexing": {
+          "index_failed": 0
+        }
+      }
+    }
+  }
 }
