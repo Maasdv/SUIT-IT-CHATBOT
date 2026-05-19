@@ -1,3 +1,4 @@
+/opt/zeek/logs/current/*.log
 
 elastic-agent enroll \
   --force \
